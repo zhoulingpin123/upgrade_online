@@ -1,0 +1,575 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 469.594 ; gain = 102.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:113]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51869]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (1#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51869]
+INFO: [Synth 8-6157] synthesizing module 'state_ctrl' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/state_ctrl.v:23]
+	Parameter IDLE bound to: 4'b0001 
+	Parameter WRITE bound to: 4'b0010 
+	Parameter SERASE bound to: 4'b0100 
+	Parameter READ bound to: 4'b1000 
+	Parameter DIV_CNT_END bound to: 4340 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'state_ctrl' (2#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/state_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_rx.v:23]
+	Parameter CNT_BAUD_MAX bound to: 433 - type: integer 
+	Parameter CNT_HALF_BAUD_MAX bound to: 216 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_tx.v:23]
+	Parameter CNT_BAUD_MAX bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flash_pp' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_pp.v:23]
+	Parameter IDLE bound to: 4'b0001 
+	Parameter WE bound to: 4'b0010 
+	Parameter DELAY bound to: 4'b0100 
+	Parameter PP bound to: 4'b1000 
+	Parameter DIV_END_NUM bound to: 3 - type: integer 
+	Parameter DELAY_END bound to: 15 - type: integer 
+	Parameter WRITE_EN bound to: 8'b00000110 
+	Parameter PAGE_P bound to: 8'b00000010 
+INFO: [Synth 8-6157] synthesizing module 'fifo_1024x8' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.runs/synth_1/.Xil/Vivado-21064-DESKTOP-U0PQ049/realtime/fifo_1024x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_1024x8' (5#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.runs/synth_1/.Xil/Vivado-21064-DESKTOP-U0PQ049/realtime/fifo_1024x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flash_pp' (6#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_pp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flash_rd' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_rd.v:23]
+	Parameter DIV_END_NUM bound to: 3 - type: integer 
+	Parameter READ_P bound to: 8'b00000011 
+INFO: [Synth 8-6157] synthesizing module 'fifo_rd' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.runs/synth_1/.Xil/Vivado-21064-DESKTOP-U0PQ049/realtime/fifo_rd_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rd' (7#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.runs/synth_1/.Xil/Vivado-21064-DESKTOP-U0PQ049/realtime/fifo_rd_stub.v:6]
+WARNING: [Synth 8-350] instance 'fifo_rd' of module 'fifo_rd' requires 10 connections, but only 8 given [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_rd.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'flash_rd' (8#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_rd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flash_se' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_se.v:23]
+	Parameter IDLE bound to: 4'b0001 
+	Parameter WE bound to: 4'b0010 
+	Parameter DELAY bound to: 4'b0100 
+	Parameter SE bound to: 4'b1000 
+	Parameter DIV_END_NUM bound to: 3 - type: integer 
+	Parameter DELAY_END bound to: 15 - type: integer 
+	Parameter WRITE_EN bound to: 8'b00000110 
+	Parameter SECTOR_E bound to: 8'b00100000 
+INFO: [Synth 8-6155] done synthesizing module 'flash_se' (9#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_se.v:23]
+INFO: [Synth 8-6157] synthesizing module 'icap_delay' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/icap_delay.v:23]
+	Parameter TIMER_END bound to: 999999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'icap_delay' (10#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/icap_delay.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:224]
+INFO: [Synth 8-6157] synthesizing module 'icap' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/icap.v:23]
+	Parameter DUMMY_WORD bound to: -1 - type: integer 
+	Parameter SYNC_WORD bound to: -1432791706 - type: integer 
+	Parameter T1WBS bound to: 805437441 - type: integer 
+	Parameter WBSA bound to: 4194304 - type: integer 
+	Parameter T1CMD bound to: 805339137 - type: integer 
+	Parameter IPROG bound to: 15 - type: integer 
+	Parameter T1NOOP bound to: 536870912 - type: integer 
+	Parameter S_DUM_WORD bound to: 8'b00000001 
+	Parameter S_SYNC_WORD bound to: 8'b00000010 
+	Parameter S_T1WBS bound to: 8'b00000100 
+	Parameter S_WBSA bound to: 8'b00001000 
+	Parameter S_T1CMD bound to: 8'b00010000 
+	Parameter S_IPROG bound to: 8'b00100000 
+	Parameter S_T1NOOP bound to: 8'b01000000 
+	Parameter S_T1NOOP_2 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22205]
+	Parameter DEVICE_ID bound to: 56823955 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (11#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22205]
+INFO: [Synth 8-6155] done synthesizing module 'icap' (12#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/icap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 525.875 ; gain = 159.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 525.875 ; gain = 159.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 525.875 ; gain = 159.125
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_rd/fifo_rd/fifo_rd_in_context.xdc] for cell 'inst_flash_rd/fifo_rd'
+Finished Parsing XDC File [d:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_rd/fifo_rd/fifo_rd_in_context.xdc] for cell 'inst_flash_rd/fifo_rd'
+Parsing XDC File [d:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_1024x8/fifo_1024x8/fifo_1024x8_in_context.xdc] for cell 'inst_flash_pp/fifo_1024x8'
+Finished Parsing XDC File [d:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_1024x8/fifo_1024x8/fifo_1024x8_in_context.xdc] for cell 'inst_flash_pp/fifo_1024x8'
+Parsing XDC File [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.910 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.910 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 869.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_flash_rd/fifo_rd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_flash_pp/fifo_1024x8. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'state_ctrl'
+INFO: [Synth 8-5544] ROM "wr_fifo_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'flash_pp'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'flash_se'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'RDWRB_reg' into 'CSIB_reg' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/icap.v:83]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'icap'
+INFO: [Synth 8-5546] ROM "CSIB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                   WRITE |                             0010 |                             0010
+                  SERASE |                             0100 |                             0100
+                    READ |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'state_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                      WE |                             0010 |                             0010
+                   DELAY |                             0100 |                             0100
+                      PP |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'flash_pp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                      WE |                             0010 |                             0010
+                   DELAY |                             0100 |                             0100
+                      SE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'flash_se'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_DUM_WORD |                         00000001 |                         00000001
+             S_SYNC_WORD |                         00000010 |                         00000010
+                S_T1NOOP |                         01000000 |                         01000000
+                 S_T1WBS |                         00000100 |                         00000100
+                  S_WBSA |                         00001000 |                         00001000
+                 S_T1CMD |                         00010000 |                         00010000
+                 S_IPROG |                         00100000 |                         00100000
+              S_T1NOOP_2 |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'icap'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 10    
+	   9 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 58    
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module state_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module flash_pp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module flash_rd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module flash_se 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module icap_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module icap 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_flash_se/we_inst_shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_flash_pp/we_inst_shift_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst_flash_rd/bit_cnt_end_reg[0]' (FDCE) to 'inst_flash_rd/bit_cnt_end_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst_flash_rd/bit_cnt_end_reg[1]' (FDCE) to 'inst_flash_rd/bit_cnt_end_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_flash_rd/bit_cnt_end_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 869.910 ; gain = 503.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_1024x8   |         1|
+|2     |fifo_rd       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |fifo_1024x8 |     1|
+|2     |fifo_rd     |     1|
+|3     |BUFG        |     1|
+|4     |CARRY4      |    51|
+|5     |ICAPE2      |     1|
+|6     |LUT1        |    22|
+|7     |LUT2        |    40|
+|8     |LUT3        |   101|
+|9     |LUT4        |   124|
+|10    |LUT5        |    98|
+|11    |LUT6        |   127|
+|12    |MUXF7       |     1|
+|13    |STARTUPE2   |     1|
+|14    |FDCE        |   421|
+|15    |FDPE        |    42|
+|16    |FDRE        |    22|
+|17    |IBUF        |     3|
+|18    |OBUF        |     3|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------+-----------+------+
+|      |Instance          |Module     |Cells |
++------+------------------+-----------+------+
+|1     |top               |           |  1080|
+|2     |  icap            |icap       |    73|
+|3     |  inst_flash_pp   |flash_pp   |   196|
+|4     |  inst_flash_rd   |flash_rd   |   163|
+|5     |  inst_flash_se   |flash_se   |   163|
+|6     |  inst_icap_delay |icap_delay |    56|
+|7     |  inst_state_ctrl |state_ctrl |   263|
+|8     |  inst_uart_rx    |uart_rx    |    65|
+|9     |  inst_uart_tx    |uart_tx    |    59|
++------+------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 891.398 ; gain = 180.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.398 ; gain = 524.648
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 891.398 ; gain = 536.168
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.398 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 16:04:14 2024...

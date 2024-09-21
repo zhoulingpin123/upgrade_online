@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 21 21:10:48 2024
+# Process ID: 12668
+# Current directory: D:/respository/upgrade_online
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19592 D:\respository\upgrade_online\flash_100t_test.xpr
+# Log file: D:/respository/upgrade_online/vivado.log
+# Journal file: D:/respository/upgrade_online\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 21 21:11:02 2024...

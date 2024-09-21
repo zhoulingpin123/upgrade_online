@@ -1,0 +1,41 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a852b0b9618d45f187851258b18f6c3c --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'CLK' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:118]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'GSR' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:119]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'GTS' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:120]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'KEYCLEARB' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:121]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PACK' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:122]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'USRCCLKTS' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:125]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'USRDONEO' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:127]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'USRDONETS' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:128]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'rd_len' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:156]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'rd_len' [D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v:198]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.ila_1
+Compiling module xil_defaultlib.state_ctrl
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_s...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3(C_COMMON_...
+Compiling module xil_defaultlib.fifo_1024x8
+Compiling module xil_defaultlib.flash_pp
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_s...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3(C_COMMON_...
+Compiling module xil_defaultlib.fifo_rd
+Compiling module xil_defaultlib.flash_rd
+Compiling module xil_defaultlib.flash_se
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

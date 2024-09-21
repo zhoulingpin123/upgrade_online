@@ -1,0 +1,17 @@
+set_property PACKAGE_PIN P17 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+set_property PACKAGE_PIN V10 [get_ports rx]
+set_property PACKAGE_PIN T11 [get_ports tx]
+set_property PACKAGE_PIN L13 [get_ports cs_n]
+set_property PACKAGE_PIN K17 [get_ports sdi]
+set_property PACKAGE_PIN K18 [get_ports sdo]
+set_property IOSTANDARD LVCMOS33 [get_ports sdi]
+set_property IOSTANDARD LVCMOS33 [get_ports sdo]
+set_property IOSTANDARD LVCMOS33 [get_ports cs_n]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+set_property IOSTANDARD LVCMOS33 [get_ports rx]
+
+
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]    
+#set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 1 [current_design]    
+set_property BITSTREAM.CONFIG.CONFIGFALLBACK ENABLE [current_design]

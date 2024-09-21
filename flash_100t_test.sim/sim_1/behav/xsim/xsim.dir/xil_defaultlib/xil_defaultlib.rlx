@@ -1,0 +1,17 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sim_1/new/tb_rx.v,1704440805,verilog,,,,tb_rx,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sim_1/new/tb_top.v,1704439104,verilog,,,,tb_top,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_1024x8/sim/fifo_1024x8.v,1704359914,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/ila_1/sim/ila_1.v,,fifo_1024x8,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_rd/sim/fifo_rd.v,1704359858,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/fifo_1024x8/sim/fifo_1024x8.v,,fifo_rd,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/ip/ila_1/sim/ila_1.v,1704769603,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_pp.v,,ila_1,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_pp.v,1704359748,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_rd.v,,flash_pp,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_rd.v,1704359759,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_se.v,,flash_rd,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/flash_se.v,1704705431,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/state_ctrl.v,,flash_se,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/state_ctrl.v,1704769689,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v,,state_ctrl,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/top.v,1704770234,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_rx.v,,top,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_rx.v,1704770272,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_tx.v,,uart_rx,,,,,,,,
+D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sources_1/new/uart_tx.v,1704770262,verilog,,D:/2024/01/Upgrade_online/flash_100t_test/flash_100t_test.srcs/sim_1/new/tb_top.v,,uart_tx,,,,,,,,

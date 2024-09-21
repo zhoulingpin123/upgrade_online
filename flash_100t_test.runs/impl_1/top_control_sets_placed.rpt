@@ -1,0 +1,136 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jan 12 16:04:37 2024
+| Host         : DESKTOP-U0PQ049 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    59 |
+| Unused register locations in slices containing registers |   213 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            5 |
+|      2 |            5 |
+|      3 |            4 |
+|      4 |            5 |
+|      5 |            2 |
+|      6 |            3 |
+|      7 |            1 |
+|      8 |            9 |
+|     10 |            3 |
+|     11 |            3 |
+|     12 |            3 |
+|     13 |            1 |
+|     14 |            1 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              31 |           12 |
+| No           | No                    | Yes                    |             108 |           39 |
+| No           | Yes                   | No                     |               6 |            2 |
+| Yes          | No                    | No                     |              14 |            4 |
+| Yes          | No                    | Yes                    |             416 |          128 |
+| Yes          | Yes                   | No                     |              52 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |                                              Enable Signal                                             |                                                              Set/Reset Signal                                                              | Slice Load Count | Bel Load Count |
++--------------------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG | inst_uart_tx/tx_i_1_n_0                                                                                | rst                                                                                                                                        |                1 |              1 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/we_inst_shift[7]_i_1_n_0                                                                 | rst_reg_rep__2_n_0                                                                                                                         |                1 |              1 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/pp_inst_shift[31]_i_1_n_0                                                                | rst                                                                                                                                        |                1 |              1 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/rd_inst_shift[31]_i_1_n_0                                                                | rst                                                                                                                                        |                1 |              1 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/wr_fifo_data                                                                           | rst_reg_rep__2_n_0                                                                                                                         |                1 |              1 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                1 |              2 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                                               |                1 |              2 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/wr_fifo_data                                                                           | rst                                                                                                                                        |                1 |              2 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/bit_cnt[0]_i_1_n_0                                                                       | rst_reg_rep__1_n_0                                                                                                                         |                2 |              2 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/rd_len_shift0                                                                          | rst                                                                                                                                        |                1 |              2 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff[1] |                1 |              3 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | rst                                                                                                                                        |                2 |              3 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/rd_len_shift0                                                                          | rst_reg_rep__2_n_0                                                                                                                         |                2 |              3 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/bit_cnt[0]_i_1_n_0                                                                       | rst_reg_rep__0_n_0                                                                                                                         |                1 |              3 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/state[3]_i_1__1_n_0                                                                      | rst_reg_rep__0_n_0                                                                                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/state[3]_i_1__2_n_0                                                                      | rst_reg_rep__0_n_0                                                                                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/state[3]_i_1__0_n_0                                                                    | rst_reg_rep__0_n_0                                                                                                                         |                2 |              4 |
+|  sys_clk_IBUF_BUFG | inst_uart_rx/bit_flag                                                                                  | rst_reg_rep__0_n_0                                                                                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG | inst_uart_tx/bit_flag                                                                                  | rst_reg_rep__1_n_0                                                                                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/flash_addr_shift0                                                                      | rst_reg_rep__0_n_0                                                                                                                         |                1 |              5 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/wr_fifo_data                                                                           | rst_reg_rep__0_n_0                                                                                                                         |                2 |              5 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/tx_d_cnt[0]_i_1_n_0                                                                    | rst_reg_rep__0_n_0                                                                                                                         |                2 |              6 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | inst_flash_rd/fifo_rd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0        |                2 |              6 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/we_inst_shift[7]_i_1_n_0                                                                 | rst_reg_rep__0_n_0                                                                                                                         |                1 |              6 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/we_inst_shift[7]_i_1__0_n_0                                                              | rst_reg_rep__2_n_0                                                                                                                         |                2 |              7 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/flash_addr_shift0                                                                      | rst_reg_rep__2_n_0                                                                                                                         |                1 |              8 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/div_cnt                                                                                  | rst_reg_rep__1_n_0                                                                                                                         |                2 |              8 |
+|  sys_clk_IBUF_BUFG | icap/state[7]_i_1_n_0                                                                                  | rst_reg_rep_n_0                                                                                                                            |                4 |              8 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/div_cnt                                                                                  | rst_reg_rep__1_n_0                                                                                                                         |                3 |              8 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/tx_flag                                                                                | rst_reg_rep__1_n_0                                                                                                                         |                2 |              8 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/shift_flag                                                                               | rst                                                                                                                                        |                4 |              8 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/div_cnt                                                                                  | rst_reg_rep__2_n_0                                                                                                                         |                3 |              8 |
+|  sys_clk_IBUF_BUFG | inst_uart_rx/po_data0                                                                                  | rst_reg_rep__0_n_0                                                                                                                         |                3 |              8 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/bit_cnt[7]_i_1_n_0                                                                       | rst_reg_rep__2_n_0                                                                                                                         |                3 |              8 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/tx_d_cnt[0]_i_1_n_0                                                                    | rst_reg_rep__1_n_0                                                                                                                         |                3 |             10 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/se_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__1_n_0                                                                                                                         |                2 |             10 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/se_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__2_n_0                                                                                                                         |                3 |             10 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/rd_len_shift0                                                                          | rst_reg_rep__0_n_0                                                                                                                         |                4 |             11 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/flash_addr_shift0                                                                      | rst_reg_rep__1_n_0                                                                                                                         |                2 |             11 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/bit_cnt[0]_i_1_n_0                                                                       | rst_reg_rep__2_n_0                                                                                                                         |                4 |             11 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/bit_cnt[11]_i_1_n_0                                                                      | rst_reg_rep__2_n_0                                                                                                                         |                3 |             12 |
+|  sys_clk_IBUF_BUFG | inst_flash_se/se_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__0_n_0                                                                                                                         |                3 |             12 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/pp_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__0_n_0                                                                                                                         |                4 |             12 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/rd_flag                                                                                | rst_reg_rep__1_n_0                                                                                                                         |                4 |             13 |
+|  sys_clk_IBUF_BUFG | sel                                                                                                    |                                                                                                                                            |                4 |             14 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/div_cnt[15]_i_1_n_0                                                                    | rst_reg_rep__2_n_0                                                                                                                         |                7 |             16 |
+|  sys_clk_IBUF_BUFG | inst_state_ctrl/byte_cnt                                                                               | rst_reg_rep__0_n_0                                                                                                                         |                5 |             16 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/pp_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__2_n_0                                                                                                                         |                5 |             19 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | rst_reg_rep__1_n_0                                                                                                                         |                9 |             19 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | rst_reg_rep__2_n_0                                                                                                                         |               10 |             21 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | rst_reg_rep__0_n_0                                                                                                                         |                7 |             23 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/fifo_rd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]     | inst_flash_rd/fifo_rd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0        |                8 |             26 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/fifo_rd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]     | inst_flash_rd/fifo_rd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gcc_rst.sckt_wr_rst_cc_reg[0]_0        |                7 |             26 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                6 |             26 |
+|  sys_clk_IBUF_BUFG | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | inst_flash_pp/fifo_1024x8/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                6 |             26 |
+|  sys_clk_IBUF_BUFG | inst_flash_rd/rd_inst_shift[31]_i_1_n_0                                                                | rst_reg_rep__1_n_0                                                                                                                         |                8 |             31 |
+|  sys_clk_IBUF_BUFG | inst_icap_delay/sel                                                                                    | rst_reg_rep_n_0                                                                                                                            |                8 |             32 |
+|  sys_clk_IBUF_BUFG |                                                                                                        |                                                                                                                                            |               12 |             32 |
+|  sys_clk_IBUF_BUFG |                                                                                                        | rst_reg_rep_n_0                                                                                                                            |                8 |             35 |
++--------------------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
